@@ -1,0 +1,16 @@
+.headerDiv {
+    position: sticky;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    background-color: rgb(10, 10, 189);
+    h1 {
+        font-size: 18pt;
+        color: #eee;
+    }
+}
+
+.bigTitle {
+    display: flex;
+    justify-content: center;
+}
