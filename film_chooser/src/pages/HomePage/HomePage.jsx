@@ -1,11 +1,5 @@
-import Header from "../../components/Header/Header";
-
 function HomePage() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <div>deneme</div>;
 }
 
 export default HomePage;
