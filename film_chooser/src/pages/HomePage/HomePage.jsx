@@ -1,5 +1,11 @@
+import BigSection from "../../components/BigSection/BigSection";
+
 function HomePage() {
-  return <div>deneme</div>;
+  return (
+    <>
+      <BigSection />
+    </>
+  );
 }
 
 export default HomePage;
