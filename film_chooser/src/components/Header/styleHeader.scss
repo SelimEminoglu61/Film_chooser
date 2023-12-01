@@ -1,12 +1,14 @@
 .headerDiv {
+    z-index: 4;
     position: sticky;
     height: 60px;
     top: 0;
     width: 100%;
-    background-color: rgb(10, 10, 189);
+    background-color: rgb(173, 10, 10);
     h1 {
         font-size: 18pt;
         color: #eee;
+        margin-top: 1rem;
     }
 }
 
