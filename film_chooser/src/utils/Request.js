@@ -1,12 +1,11 @@
 import axios from "axios";
 
-async function getMovies() {
+async function getMovies(side, date) {
   const options = {
     method: "GET",
-    url: "https://moviesdatabase.p.rapidapi.com/titles/series/%7BseriesId%7D",
+    url: `http://www.omdbapi.com/?s=${side}&type=movie&y=${date}&apikey=5f04c36c`,
     headers: {
-      "X-RapidAPI-Key": "fe9eda3c24msh78f980a0ccde7d2p1c0087jsnd823f861de36",
-      "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
+      "Content-type": "Application/json",
     },
   };
 
