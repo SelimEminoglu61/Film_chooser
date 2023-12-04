@@ -5,7 +5,9 @@ import "../../pages/HomePage/styleHomePage.scss";
 
 function MovieList() {
   const [movieArr, setMovieArr] = useState([]);
-  useEffect(setMovieArr(getMovies("Hope", 2023)), []);
+  useEffect(() => {
+    setMovieArr(getMovies("Hope", 2023));
+  }, []);
   return (
     <div className="container">
       <div className="movieListDiv">
