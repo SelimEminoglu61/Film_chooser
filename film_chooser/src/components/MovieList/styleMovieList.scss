@@ -1,7 +1,27 @@
 .movieListDiv {
     background-color: #eee;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     h2 {
         color: rgb(165, 16, 16);
+        margin-top: 2rem;
     }
+}
+
+.listDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.moviePoster {
+    width: 100px;
+    height: 200px;
+}
+
+.moviesDiv {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
 }

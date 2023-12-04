@@ -11,7 +11,8 @@ async function getMovies(side, date) {
 
   try {
     const response = await axios.request(options);
-    return response.data;
+    const data = await response.data.Search;
+    return data;
   } catch (error) {
     return error;
   }
