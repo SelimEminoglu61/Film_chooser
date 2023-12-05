@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "./styleBigSection.scss";
 
 function BigSection() {
@@ -5,10 +6,18 @@ function BigSection() {
     <div className="bigDiv">
       <h2>Which side do you select?</h2>
       <div className="leftPart">
-        <img src="/images/hope.jpeg" alt="image" className="backgroundImg" />
+        <Link to="hope" smooth={true} duration={500} offset={-70}>
+          <img src="/images/hope.jpeg" alt="image" className="backgroundImg" />
+        </Link>
       </div>
       <div className="rightPart">
-        <img src="/images/justice.jpeg" alt="image" className="backgroundImg" />
+        <Link to="justice" smooth={true} duration={500} offset={-70}>
+          <img
+            src="/images/justice.jpeg"
+            alt="image"
+            className="backgroundImg"
+          />
+        </Link>
       </div>
     </div>
   );

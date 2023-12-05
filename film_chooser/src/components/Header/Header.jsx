@@ -6,7 +6,7 @@ function Header() {
     <div className="headerDiv">
       <div className="container">
         <div className="bigTitle">
-          <h1>Film Chooser</h1>
+          <h1>Movie Chooser</h1>
         </div>
       </div>
     </div>

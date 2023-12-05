@@ -25,23 +25,34 @@ function MovieList() {
   return (
     <div className="container">
       <div className="movieListDiv">
-        <h2>Movies</h2>
-        <div className="listDiv">
-          {movieError && <div>Movies can't loaded</div>}
-          <h3>Hope Movies</h3>
+        {movieError && <div>Movies can't loaded</div>}
+        <h3 id="hope">Hope Movies</h3>
+        <div className="row">
           <div className="moviesDiv">
             {movieArr.map((movie) => (
-              <div key={movie.imdbID}>
-                <img src={movie.Poster} alt="movie" className="moviePoster" />
-              </div>
+              <img
+                key={movie.imdbID}
+                src={
+                  movie.Poster != "N/A" ? movie.Poster : "/images/bos_film.jpg"
+                }
+                alt="movie"
+                className="moviePoster"
+              />
             ))}
           </div>
-          <h3>Justice Movies</h3>
+        </div>
+        <h3 id="justice">Justice Movies</h3>
+        <div className="row">
           <div className="moviesDiv">
             {movieArr2.map((movie) => (
-              <div key={movie.imdbID}>
-                <img src={movie.Poster} alt="movie" className="moviePoster" />
-              </div>
+              <img
+                key={movie.imdbID}
+                src={
+                  movie.Poster != "N/A" ? movie.Poster : "/images/bos_film.jpg"
+                }
+                alt="movie"
+                className="moviePoster"
+              />
             ))}
           </div>
         </div>
