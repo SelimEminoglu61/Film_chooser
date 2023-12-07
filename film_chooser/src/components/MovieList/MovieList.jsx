@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import getMovies from "../../utils/Request";
+import SimpleBar from "simplebar-react";
+import "simplebar-react/dist/simplebar.min.css";
 import "./styleMovieList.scss";
 import "../../pages/HomePage/styleHomePage.scss";
 
@@ -28,33 +30,41 @@ function MovieList() {
         {movieError && <div>Movies can't loaded</div>}
         <h3 id="hope">Hope Movies</h3>
         <div className="row">
-          <div className="moviesDiv">
-            {movieArr.map((movie) => (
-              <img
-                key={movie.imdbID}
-                src={
-                  movie.Poster != "N/A" ? movie.Poster : "/images/bos_film.jpg"
-                }
-                alt="movie"
-                className="moviePoster"
-              />
-            ))}
-          </div>
+          <SimpleBar className="listScroll">
+            <div className="moviesDiv">
+              {movieArr.map((movie) => (
+                <img
+                  key={movie.imdbID}
+                  src={
+                    movie.Poster != "N/A"
+                      ? movie.Poster
+                      : "/images/bos_film.jpg"
+                  }
+                  alt="movie"
+                  className="moviePoster"
+                />
+              ))}
+            </div>
+          </SimpleBar>
         </div>
         <h3 id="justice">Justice Movies</h3>
         <div className="row">
-          <div className="moviesDiv">
-            {movieArr2.map((movie) => (
-              <img
-                key={movie.imdbID}
-                src={
-                  movie.Poster != "N/A" ? movie.Poster : "/images/bos_film.jpg"
-                }
-                alt="movie"
-                className="moviePoster"
-              />
-            ))}
-          </div>
+          <SimpleBar className="listScroll">
+            <div className="moviesDiv">
+              {movieArr2.map((movie) => (
+                <img
+                  key={movie.imdbID}
+                  src={
+                    movie.Poster != "N/A"
+                      ? movie.Poster
+                      : "/images/bos_film.jpg"
+                  }
+                  alt="movie"
+                  className="moviePoster"
+                />
+              ))}
+            </div>
+          </SimpleBar>
         </div>
       </div>
     </div>

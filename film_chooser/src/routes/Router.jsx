@@ -5,7 +5,7 @@ import FilmPage from "../pages/FilmPage/FilmPage";
 const Router = () => {
   const routes = useRoutes([
     { path: "/", element: <HomePage /> },
-    { path: "/filmlist/:id", element: <FilmPage /> },
+    { path: "/movies/:id", element: <FilmPage /> },
   ]);
   return routes;
 };
