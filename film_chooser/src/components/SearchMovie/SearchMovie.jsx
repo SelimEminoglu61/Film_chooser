@@ -28,7 +28,7 @@ function SearchMovie() {
     <div className="container">
       <div className="searchDiv">
         <h2>Search Movie</h2>
-        <form onSubmit={SubmitForm()}>
+        <form onSubmit={()=>{SubmitForm()}}>
           <input
             placeholder="Type movie name"
             className="searchInput"
